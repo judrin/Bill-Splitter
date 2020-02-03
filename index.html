@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="dist/css/style.css">
+  <title>Bill Splitting Is Always Hard :(</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="add">
+      <div class="container add__container">
+        <input type="text" class="add__name" id="add-name" placeholder="Add Member Name">
+        <input type="number" class="add__value" id="add-value" placeholder="Price">
+        <button class="add__btn" id="add-member"><i class="icon ion-ios-add-circle-outline"></i></button>
+      </div>
+    </div>
+    <div class="lists">
+      <div class="container lists__container">
+        <h2 class="lists__title">Member Lists</h2>
+        <div class="member__list" id="member-list"></div>
+      </div>
+    </div>
+    <div class="extra" id="extra">
+      <div class="container extra__container">
+        <input type="number" class="add__tax" id="add-tax" placeholder="Add Tax">
+        <input type="number" class="add__tip" id="add-tip" placeholder="Add Tip">
+        <button class="split__btn" id="split-btn">Split!</button>
+      </div>
+    </div>
+    <div class="overview hide" id="overview">
+      <div class="container overview__container">
+          <dv class="result">
+            <div class="result__description">Subtotal:</div>
+            <div class="price__amount" id="subtotal-amount"></div>
+          </dv>
+          <dv class="result">
+            <div class="result__description">Tip:</div>
+            <div class="price__amount" id="tip-amount"></div>
+          </dv>
+          <dv class="result result__total">
+            <div class="result__description">Total:</div>
+            <div class="price__amount" id="total-amount"></div>
+          </dv>
+      </div>
+    </div>
+  </div>
+  <script src="dist/js/bundle.js"></script>
+</body>
+</html>
