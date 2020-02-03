@@ -8,6 +8,10 @@ Bill Splitter helps to split the bill at a restaurant.
 2. Click "Split!" button
 3. That's it!
 
+![sample](/sample/sample-1.png)
+
+![sample](/sample/sample-2.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
